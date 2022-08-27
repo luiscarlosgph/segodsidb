@@ -1,0 +1,80 @@
+{
+    "name": "odsi_db_spixel",
+    "n_gpu": 1,
+
+    "model": {
+        "type": "VectorUnet",
+        "args": {
+            "in_channels": 51,
+            "out_channels": 35
+        }
+    },
+
+    "data_loader": {
+        "type": "OdsiDbDataLoader",
+        "args":{
+            "data_dir": "data/",
+            "batch_size": 2,
+            "shuffle": true,
+            "validation_split": 0.1,
+            "num_workers": 4,
+            "mode": "spixel"
+        }
+    },
+
+    "optimizer": {
+        "type": "SGD",
+        "args":{
+            "lr": 1e-4,
+            "weight_decay": 0.0005,
+            "momentum": 0.99 
+        }
+    },
+
+    "loss": "odsi_db_pw_ce_logprob_loss",
+
+    "metrics": [
+        "odsi_db_mean_iou",
+        "odsi_db_balanced_accuracy",
+        "odsi_db_accuracy",
+        "odsi_db_precision",
+        "odsi_db_sensitivity",
+        "odsi_db_f1_score"
+    ],
+
+    "lr_scheduler": {
+        "type": "ReduceLROnPlateau",
+        "args": {
+            "factor": 0.6,
+            "patience": 10
+        }
+    },
+
+    "machine": {
+        "type": "GenericMachine", 
+        "args": {
+            "epochs": 600,
+            "save_dir": "saved/",
+            "save_period": 1,
+            "verbosity": 2,
+            "monitor": "min val_loss",
+            "early_stop": 30,
+            "tensorboard": true
+        }
+    },
+
+    "testing": {
+        "datasets": [
+            {
+                "type": "OdsiDbDataLoader", 
+                "args":{
+                    "data_dir": "data/",
+                    "batch_size": 1,
+                    "shuffle": true,
+                    "validation_split": 0.1,
+                    "num_workers": 1
+                }
+            }
+        ]
+    }
+}
