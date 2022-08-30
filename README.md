@@ -1,6 +1,23 @@
-Description
------------
-Hyperspectral segmentation of dental images from the [ODSI-DB dataset](https://sites.uef.fi/spectral/odsi-db). 
+Introduction
+------------
+This repository contains code and data related to the paper ["Hyperspectral image segmentation: A preliminary study on the Oral and Dental Spectral Image Database (ODSI-DB)", Luis Carlos Garcia Peraza Herrera et al., MICCAI 2022 16th AE-CAI, 9th CARE and 5th OR 2.0 Workshop](). Also available in [Arxiv]().
+
+Citation
+--------
+Please if you use this code in your work, cite:
+```
+@article{Garcia-Peraza-Herrera2022,  
+  author={Garcia-Peraza-Herrera, Luis C. and Horgan, Conor and Ourselin, Sebastien and Ebner, Michael and Vercauteren, Tom},  
+  journal={},   
+  title={Hyperspectral image segmentation: A preliminary study on the Oral and Dental Spectral Image Database (ODSI-DB)},   
+  year={2022},  
+  volume={},  
+  number={},  
+  pages={},  
+  doi={}
+}
+```
+<!-- Hyperspectral segmentation of dental images from the [ODSI-DB dataset](https://sites.uef.fi/spectral/odsi-db). -->
 
 Dependencies
 ------------
