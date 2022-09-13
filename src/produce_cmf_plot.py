@@ -15,6 +15,7 @@ import torchseg.data_loader as dl
 def main():
     plt.rc('font', size=12)
 
+
     # Produce CMF function 
     cmf = 'cie_2_1931'
     min_wl = 380
@@ -49,7 +50,7 @@ def main():
     plt.legend()
     plt.xlabel('Wavelength (nm)')
     fig = cmf_plot.get_figure()
-    fig.savefig('cie_2_1931.svg')
+    fig.savefig('cie_2_1931.svg', format='svg', dpi=600)
 
     # Clear plot
     plt.clf()
@@ -87,7 +88,7 @@ def main():
     plt.legend()
     plt.xlabel('Wavelength (nm)')
     fig = cmf_plot.get_figure()
-    fig.savefig('cie_2_1931_specim_iq.svg')
+    fig.savefig('cie_2_1931_specim_iq.svg', format='svg', dpi=600)
 
     # Clear plot
     plt.clf()
@@ -125,7 +126,7 @@ def main():
     plt.legend()
     plt.xlabel('Wavelength (nm)')
     fig = cmf_plot.get_figure()
-    fig.savefig('cie_2_1931_nuance_ex.svg')
+    fig.savefig('cie_2_1931_nuance_ex.svg', format='svg', dpi=600)
 
 
 if __name__ == '__main__':
