@@ -6,7 +6,7 @@ This repository contains code and data related to the paper ["Hyperspectral imag
 Download links
 --------------
 
-* Digital Poster file (PDF): [here](doc/Paper#22_GarciaPerazaHerrera_Poster.pdf).
+* Digital Poster file (PDF): [here](doc/Paper%2322_GarciaPerazaHerrera_Poster.pdf).
 * Short slide deck for short presentation: PPT [here]() and PDF [here]().
 * Final camera-ready PDF: [here]().
 
