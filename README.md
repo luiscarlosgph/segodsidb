@@ -1,6 +1,6 @@
 Introduction
 ------------
-This repository contains code and data related to the paper ["Hyperspectral image segmentation: A preliminary study on the Oral and Dental Spectral Image Database (ODSI-DB)", Luis Carlos Garcia Peraza Herrera et al., MICCAI 2022 16th AE-CAI, 9th CARE and 5th OR 2.0 Workshop](). <!--Also available in [Arxiv]().-->
+This repository contains code and data related to the paper **Hyperspectral image segmentation: A preliminary study on the Oral and Dental Spectral Image Database (ODSI-DB)**, Luis Carlos Garcia Peraza Herrera et al., MICCAI 2022 16th AE-CAI, 9th CARE and 5th OR 2.0 Workshop. <!--Also available in [Arxiv]().-->
 
 
 Download links
