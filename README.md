@@ -9,7 +9,7 @@ Download links
 --------------
 
 * Digital Poster file (PDF) [here](doc/Paper%2322_GarciaPerazaHerrera_Poster.pdf).
-* Short slide deck for short presentation PPT [here]() and PDF [here]().
+* Short slide deck for short presentation PPT [here](doc/Paper%2322_GarciaPerazaHerrera_Slides.pptx) and PDF [here]().
 * Final camera-ready PDF [here](doc/Paper%2322_GarciaPerazaHerrera_Paper.pdf).
 
 <!--
